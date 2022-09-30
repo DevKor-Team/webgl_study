@@ -1,4 +1,5 @@
 // Class to generate a random masonry layout, using a square grid as base
+// from https://css-tricks.com/building-an-images-gallery-using-pixijs-and-webgl/
 class Grid {
 
     // The constructor receives all the following parameters:
