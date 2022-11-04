@@ -68,8 +68,10 @@ Detailed threejs by Discover threejs : https://discoverthreejs.com/
 
 Threejs Bookshelf / Various materials on threejs, by community : https://discourse.threejs.org/t/three-js-bookshelf/2468
 
+Bokoko33's Landing Page Remake Tutorial : https://www.youtube.com/watch?v=rxTb9ys834w
+
 ## Good Examples:
 
 - https://www.hkdi.edu.hk/dreamfactory/index.html
 - https://2019.makemepulse.com/
-- https://bokoko33.me/ (Tutorial : https://www.youtube.com/watch?v=rxTb9ys834w)
+- https://bokoko33.me/
