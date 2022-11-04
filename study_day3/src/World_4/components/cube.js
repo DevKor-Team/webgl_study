@@ -29,18 +29,18 @@ function createCube() {
 
 
   // EULER
-  /*
+  
   
   // let's rotate the cyliner 90 degrees around the y axis
   // and then 90 degrees around the x axis
-  par_cyliner.rotation.set(Math.PI / 2, 0, 0);
-  child_box.rotation.set(0, Math.PI/3, 0);
+  //par_cyliner.rotation.set(Math.PI / 2, 0, 0);
+  //child_box.rotation.set(0, Math.PI/3, 0);
 
 
   // is this same as
   //par_cyliner.rotation.set(0, Math.PI/3, 0);
   //child_box.rotation.set(Math.PI / 2, 0, 0);
-  */
+  
 
 
   // Querternion

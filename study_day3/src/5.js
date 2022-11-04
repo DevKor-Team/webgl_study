@@ -11,6 +11,7 @@ function main() {
   world.render();
 
   world.start();
+  world.stop();
 }
 
 main();

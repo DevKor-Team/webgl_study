@@ -14,20 +14,20 @@ function createCube() {
   cube_world.rotation.set(-0.6, -0.1, 0.8);
 
   // let's add sphere and a cyliner
-  /*
+  
   const sphere_geo = new SphereGeometry(1, 32, 32);
   const sphere = new Mesh(sphere_geo, material_metal);
 
   const cylinder_geo = new CylinderGeometry(0.5, 0.5, 2, 32);
-  const cylinder = new Mesh(cylinder_geo, material_metal);
+  const cylinder = new Mesh(cylinder_geo, material_metal_2);
 
   cube_world.add(sphere);
   cube_world.add(cylinder);
-  */
+  
 
   // now let's change the position of the sphere and cylinder
-  //sphere.position.set(0, 3, 0);
-  //cylinder.position.set(0, -3, 0);
+  sphere.position.set(0, 3, 0);
+  cylinder.position.set(0, -3, 0);
 
   // let's rotate the cylinder
   //cylinder.rotation.set(0, 0, 0.5);
@@ -35,13 +35,13 @@ function createCube() {
 
   // let's add a cyliner to the cylinder
 
-  /*
-  const cyliner_of_cyliner_geo = new CylinderGeometry(0.5, 0.5, 2, 32);
-  const cyliner_of_cyliner = new Mesh(cyliner_of_cyliner_geo, material_metal);
+  
+  const child_of_cyliner_geo = new CylinderGeometry(0.5, 0.5, 1, 32);
+  const child_of_cyliner = new Mesh(child_of_cyliner_geo, material_metal);
 
-  cylinder.add(cyliner_of_cyliner);
-  cyliner_of_cyliner.position.set(0, -3, 0);
-  */
+  cylinder.add(child_of_cyliner);
+  child_of_cyliner.position.set(0, -1, 0);
+  
 
 
   // Scaling
@@ -50,7 +50,7 @@ function createCube() {
   //cube_world.scale.set(2, 2, 2);
 
   // What happens if we scale the parent cyliner?
-  //cylinder.scale.set(2, 2, 2);
+  // cylinder.scale.set(2, 2, 2);
 
   // Rotation
   // What happens to the cylinder if we rotate the cube?
