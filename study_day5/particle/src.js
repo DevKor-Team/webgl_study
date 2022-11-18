@@ -122,10 +122,10 @@ if (true) {
     scene.add(particles)
 
     if (true) {
-        particlesMaterial.size = 1.5
+        particlesMaterial.size = 1;
 
         const textureLoader = new THREE.TextureLoader()
-        const particleTexture = textureLoader.load('particles/stars/star_02.png')
+        const particleTexture = textureLoader.load('particles/stars/star_01.png')
 
         particlesMaterial.map = particleTexture
         particlesMaterial.transparent = true
@@ -138,8 +138,6 @@ The depth of what's being drawn is stored in what we call a depth buffer. Instea
 particles in that depth buffer
         */
         particlesMaterial.depthWrite = false
-
-
         particlesMaterial.blending = THREE.AdditiveBlending
     }
 }
@@ -163,10 +161,8 @@ function animate() {
 
 
     if (true) {
-
         for (let i = 0; i < count; i++) {
-            let i3 = i * 3
-
+            let i3 = i * 3;
             const x = particlesGeometry.attributes.position.array[i3]
             particlesGeometry.attributes.position.array[i3 + 1] = Math.sin(elapsedTime + x)
         }

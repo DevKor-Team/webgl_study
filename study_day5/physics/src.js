@@ -115,7 +115,7 @@ const sphereBody = new CANNON.Body({
 world.addBody(sphereBody);
 
 
-if(false){
+if(true){
 
 
     const planeObject = new THREE.Mesh(
@@ -135,7 +135,7 @@ if(false){
 
     floorBody.quaternion.setFromAxisAngle(new CANNON.Vec3(- 1, 0, 0), Math.PI * 0.5);
 
-    if(false){
+    if(true){
         const concreteMaterial = new CANNON.Material('concrete')
         const plasticMaterial = new CANNON.Material('plastic')
 
@@ -152,7 +152,7 @@ if(false){
         floorBody.material = concreteMaterial;
         sphereBody.material = plasticMaterial;
 
-        //sphereBody.applyLocalForce(new CANNON.Vec3(150, 0, 0), new CANNON.Vec3(0, 0, 0))
+        sphereBody.applyLocalForce(new CANNON.Vec3(150, 0, 0), new CANNON.Vec3(0, 0, 0));
     }
 
 }
@@ -173,14 +173,14 @@ function animate() {
     requestAnimationFrame(animate);
 
     const delta = clock.getDelta();
-   
-   
-    controls.update(delta);
+
     world.step(1 / 60, delta, 3)
+    
     sphere.position.x = sphereBody.position.x
     sphere.position.y = sphereBody.position.y
     sphere.position.z = sphereBody.position.z
 
+    controls.update(delta);
     renderer.render(scene, camera);
 };
 

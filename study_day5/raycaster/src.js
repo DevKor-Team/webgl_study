@@ -89,7 +89,7 @@ controls.maxPolarAngle = Math.PI / 2;
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2();
 
-function onPointerMove(event) {
+function onPointerClick(event) {
 
     // calculate pointer position in normalized device coordinates
     // (-1 to +1) for both components
@@ -97,7 +97,13 @@ function onPointerMove(event) {
     pointer.y = - (event.clientY / window.innerHeight) * 2 + 1;
 
 }
-window.addEventListener('pointermove', onPointerMove);
+
+function onPointerRelease(event){
+    pointer.x = -100;
+    pointer.y = -100;
+}
+window.addEventListener('click', onPointerClick);
+window.addEventListener('mousemove', onPointerRelease);
 
 
 
@@ -108,12 +114,12 @@ const rayCylinder = new THREE.Mesh(
 
 scene.add(rayCylinder);
 
-const rayCylinerCaster = new THREE.Raycaster();
+const rayCylinderCaster = new THREE.Raycaster();
 
-const rayOrigin = new THREE.Vector3(0, 0, 0);
-const rayDirection = new THREE.Vector3(1, 0, 0);
+const rayCylinderOrigin = new THREE.Vector3(0, 0, 0);
+const rayCylinderDirection = new THREE.Vector3(1, 0, 0);
 
-// make cylinder follow rayDirection's direction
+// make cylinder follow rayCylinderDirection's direction
 
 
 
@@ -135,21 +141,21 @@ function animate() {
     
 
 
-    // update rayDirection
-    rayDirection.x = Math.cos(elapsedTime);
-    rayDirection.y = Math.sin(elapsedTime);
-    rayDirection.normalize();
+    // update rayCylinderDirection
+    rayCylinderDirection.x = Math.cos(elapsedTime);
+    rayCylinderDirection.y = Math.sin(elapsedTime);
+    rayCylinderDirection.normalize();
 
-    rayCylinerCaster.set(rayOrigin, rayDirection);
-
-
-
-    const CylinerIntersects = rayCylinerCaster.intersectObjects(scene.children);
+    rayCylinderCaster.set(rayCylinderOrigin, rayCylinderDirection);
 
 
-    rayCylinder.position.copy(rayOrigin);
+
+    const CylinerIntersects = rayCylinderCaster.intersectObjects(scene.children);
+
+
+    rayCylinder.position.copy(rayCylinderOrigin);
     
-    rayCylinder.lookAt(rayDirection);
+    rayCylinder.lookAt(rayCylinderDirection);
 
 
     for(const intersects of CylinerIntersects) {
