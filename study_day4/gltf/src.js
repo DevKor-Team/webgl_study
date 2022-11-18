@@ -20,7 +20,7 @@ const container = document.querySelector('#scene-container');
 const scene = new Scene();
 
 
-scene.background = new Color('skyblue');
+scene.background = new Color('grey');
 
 
 const fov = 35;
@@ -106,8 +106,8 @@ for (let i = 0; i < cubeCount; i++) {
 };
 
 
-const light = new THREE.PointLight(0xffffff, 4, 100);
-light.position.set(3, 3, 3);
+const light = new THREE.PointLight(0xffffff, 10, 100);
+light.position.set(3, 20, 3);
 scene.add(light);
 
 const renderer = new WebGLRenderer();
@@ -125,16 +125,17 @@ controls.enableDamping = true; // an animation loop is required when either damp
 controls.dampingFactor = 0.05;
 controls.screenSpacePanning = false;
 controls.minDistance = 3;
-controls.maxDistance = 20;
+controls.maxDistance = 60;
 controls.maxPolarAngle = Math.PI / 2;
 
 // load GLTF
 
 const loader = new GLTFLoader();
 
-loader.load( './pickup_special/scene.gltf', function ( gltf ) {
-
+loader.load( './tyrannosarus_rex_free_model/tyrannosarus_rex_free_model/scene.gltf', function ( gltf ) {
+    gltf.scene.metalness = 0.0;
 	scene.add( gltf.scene );
+    
 
 }, undefined, function ( error ) {
 

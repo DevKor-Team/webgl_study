@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tyrannosarus rex (Free model)
+* source:	https://sketchfab.com/3d-models/tyrannosarus-rex-free-model-e18c433cdd1c49f8ac152348b7384037
+* author:	Joel Anderson (https://sketchfab.com/joel3d)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tyrannosarus rex (Free model)" (https://sketchfab.com/3d-models/tyrannosarus-rex-free-model-e18c433cdd1c49f8ac152348b7384037) by Joel Anderson (https://sketchfab.com/joel3d) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

@@ -129,7 +129,6 @@ controls.minDistance = 3;
 controls.maxDistance = 20;
 controls.maxPolarAngle = Math.PI / 2;
 */
-
 // fly controls
 
 /*
@@ -138,7 +137,7 @@ const controls = new FlyControls( camera, renderer.domElement );
 controls.movementSpeed = 2.0;
 controls.domElement = renderer.domElement;
 controls.rollSpeed = Math.PI / 24;
-controls.autoForward = true;
+controls.autoForward = false;
 controls.dragToLook = true;
 */
 
@@ -149,6 +148,7 @@ function animate() {
 
     const delta = clock.getDelta();
     //controls.update(delta);
+    camera.position.z = 3.0;
 
     cube.rotation.y += 0.01;
 

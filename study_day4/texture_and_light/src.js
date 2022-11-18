@@ -42,8 +42,6 @@ const textureLoader = new TextureLoader().setPath(
 );
 
 const diffuseMap = textureLoader.load("dusty-cobble_albedo.png");
-//diffuseMap.encoding = sRGBEncoding;
-
 const aoMap = textureLoader.load("dusty-cobble_ao.png");
 const heightMap = textureLoader.load("dusty-cobble_height.png");
 const metallicMap = textureLoader.load("dusty-cobble_metallic.png");
@@ -76,21 +74,21 @@ scene.add(cube);
 
 // ADD LIGHR!
 
-/*
 
-// pointlight
-const light = new THREE.PointLight( 0xff0000, 1, 100 );
+
+// pointlight'
+const light = new THREE.PointLight( 0xffffff, 3, 100 );
 light.position.set( 3, 3, 3 );
 scene.add( light );
 
 
 // HemisphereLight
-scene.add( new THREE.HemisphereLight( 0x443333, 0x222233, 4 ) );
+//scene.add( new THREE.HemisphereLight( 0x443333, 0x222233, 4 ) );
 
 
 // AmbientLight
-scene.add( new THREE.AmbientLight( 0x222222 ) );
-*/
+scene.add( new THREE.AmbientLight( 0xffbbcc ) );
+
 
 const renderer = new WebGLRenderer();
 
