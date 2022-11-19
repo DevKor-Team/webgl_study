@@ -10,6 +10,23 @@ Day 3: Intro to Threejs
 
 - https://devkor-team.github.io/webgl_study/study_day3/threejs_index.html
 
+Day 4: Texture, Light, Camera Control & GLTF
+
+- https://devkor-team.github.io/webgl_study/study_day4/texture_and_light/threejs_index.html
+
+- https://devkor-team.github.io/webgl_study/study_day4/camera_control/threejs_index.html
+
+- https://devkor-team.github.io/webgl_study/study_day4/gltf/threejs_index.html
+
+Day 5: Particles, Raycasts & Physics
+
+- https://devkor-team.github.io/webgl_study/study_day5/particle/threejs_index.html
+
+- https://devkor-team.github.io/webgl_study/study_day5/physics/threejs_index.html
+
+- https://devkor-team.github.io/webgl_study/study_day5/raycaster/threejs_index.html
+
+
 # Generic Graphics (+ OpenGL/WebGL) Materials
 
 Mozilla WebGL : https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial/Getting_started_with_WebGL
