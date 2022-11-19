@@ -1,16 +1,16 @@
 # Devkor WebGL/Graphics Study
 
-Day 1: OT & Graphics Pipeline
+### Day 1: OT & Graphics Pipeline
 
-Day 2: Shader & glsl
+### Day 2: Shader & glsl
 
 - https://devkor-team.github.io/webgl_study/study_day2/shader_index.html
 
-Day 3: Intro to Threejs
+### Day 3: Intro to Threejs
 
 - https://devkor-team.github.io/webgl_study/study_day3/threejs_index.html
 
-Day 4: Texture, Light, Camera Control & GLTF
+### Day 4: Texture, Light, Camera Control & GLTF
 
 - https://devkor-team.github.io/webgl_study/study_day4/texture_and_light/threejs_index.html
 
@@ -18,7 +18,7 @@ Day 4: Texture, Light, Camera Control & GLTF
 
 - https://devkor-team.github.io/webgl_study/study_day4/gltf/threejs_index.html
 
-Day 5: Particles, Raycasts & Physics
+### Day 5: Particles, Raycasts & Physics
 
 - https://devkor-team.github.io/webgl_study/study_day5/particle/threejs_index.html
 
